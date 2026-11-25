@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf8f5">
+  <meta name="description" content="EVENTRA creates thoughtful weddings, corporate events and private celebrations.">
+  <title>EVENTRA | Events, Beautifully Made</title>
+
+  <!-- Tailwind configuration must load before the Tailwind CDN. -->
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom styles and typography. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-ivory text-ink font-sans">
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header fixed top-0 left-0 z-50 w-full">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-12" aria-label="Main navigation">
+      <a href="#home" class="brand text-2xl font-bold tracking-[0.22em]"
+        aria-label="EVENTRA home">EVENTRA</a>
+
+      <button id="menuBtn" class="menu-btn rounded-full border border-champagne px-4 py-2 text-sm lg:hidden"
+        aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">MENU</button>
+
+      <div id="navLinks"
+        class="nav-links hidden items-center gap-9 text-xs font-semibold uppercase tracking-[0.16em] lg:flex">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact" class="nav-cta rounded-full bg-ink px-6 py-3 text-white">Let's Talk</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero-section relative flex min-h-screen items-center overflow-hidden px-6 pt-28 lg:px-12">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2">
+        <div class="hero-copy">
+          <p class="eyebrow mb-6 flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-champagne">
+            <span class="h-px w-10 bg-champagne"></span> Moments made unforgettable
+          </p>
+          <h1 class="max-w-2xl font-display text-5xl leading-[1.08] sm:text-6xl lg:text-7xl">
+            We create <em class="text-champagne">beautiful</em> moments that last.
+          </h1>
+          <p class="mt-7 max-w-lg text-base leading-8 text-muted">
+            Thoughtfully planned celebrations, beautifully designed experiences, and meaningful moments made yours.
+          </p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#contact"
+              class="primary-btn rounded-full bg-ink px-8 py-4 text-xs font-bold uppercase tracking-[0.15em] text-white">Plan
+              your event <span>↗</span></a>
+            <a href="#services"
+              class="secondary-btn rounded-full border border-[#D9D0C5] px-8 py-4 text-xs font-bold uppercase tracking-[0.15em]">Explore
+              services</a>
+          </div>
+          <div class="mt-12 flex items-center gap-4 text-xs text-muted">
+            <div class="flex -space-x-3" aria-hidden="true">
+              <span class="avatar avatar-one"></span><span class="avatar avatar-two"></span><span
+                class="avatar avatar-three"></span>
+            </div>
+            <p><strong class="text-ink">500+</strong> moments beautifully planned</p>
+          </div>
+        </div>
+
+        <div class="hero-visual relative mx-auto w-full max-w-xl">
+          <div class="hero-image-wrap h-[330px] sm:h-[390px] md:h-[470px] lg:h-[530px]">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1100&q=85"
+              alt="Elegant wedding reception with flowers and candlelight" fetchpriority="high">
+          </div>
+
+        </div>
+      </div>
+      <a href="#about"
+        class="scroll-cue absolute bottom-8 left-1/2 hidden -translate-x-1/2 items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-muted md:flex"><span></span>Scroll
+        to discover</a>
+    </section>
+
+
+    <!-- ==================== INTRO / ABOUT ==================== -->
+    <section id="about" class="about-section px-6 py-24 lg:px-12 lg:py-32">
+      <div class="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-2">
+        <div class="about-visual reveal min-h-[320px] sm:min-h-[380px] lg:min-h-[480px] pr-10 sm:pr-14 lg:pr-[65px]">
+          <div
+            class="about-image-main h-[285px] sm:h-[340px] lg:h-[430px] rounded-tr-[95px] sm:rounded-tr-[110px] lg:rounded-tr-[130px]">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=85"
+              alt="Beautifully styled event table with warm lighting" loading="lazy">
+          </div>
+          <div
+            class="about-image-small h-[120px] sm:h-[145px] lg:h-[190px] w-[45%] sm:w-[42%] border-[6px] sm:border-[9px]">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=85"
+              alt="Floral details at a celebration" loading="lazy">
+          </div>
+          <span class="about-years"><strong>08</strong><small>YEARS OF<br>EXPERIENCE</small></span>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">A little about EVENTRA
+          </p>
+          <h2 class="font-display text-4xl leading-tight sm:text-5xl">More than an event.<br><em>A feeling to
+              remember.</em></h2>
+          <p class="mt-6 leading-8 text-muted">We believe the best celebrations are the ones that feel personal. Our
+            team brings thoughtful planning, creative direction and calm coordination together to make every occasion
+            feel effortless.</p>
+          <p class="mt-4 leading-8 text-muted">From the first conversation to the final detail, we turn your ideas into
+            experiences worth remembering.</p>
+          <a href="#portfolio"
+            class="text-link mt-8 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em]">Discover
+            our work <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services" class="services-section px-6 py-24 lg:px-12 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mx-auto mb-14 max-w-2xl text-center">
+          <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">What we do</p>
+          <h2 class="font-display text-4xl sm:text-5xl">Experiences with <em>meaning.</em></h2>
+          <p class="mx-auto mt-5 max-w-xl leading-7 text-muted">From intimate gatherings to grand celebrations, we bring
+            your vision to life with care and creativity.</p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="service-card reveal">
+            <div class="service-image"><img
+                src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=850&q=85"
+                alt="Romantic wedding table setting" loading="lazy"></div>
+            <div class="service-content">
+              <div class="flex items-center justify-between">
+                <h3 class="font-display text-2xl">Weddings</h3><span class="service-arrow">↗</span>
+              </div>
+              <p>Personal celebrations shaped around your story, with every detail considered.</p>
+              <a href="#contact">DISCOVER MORE <span>→</span></a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img
+                src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=850&q=85"
+                alt="Elegant corporate event venue" loading="lazy"></div>
+            <div class="service-content">
+              <div class="flex items-center justify-between">
+                <h3 class="font-display text-2xl">Corporate</h3><span class="service-arrow">↗</span>
+              </div>
+              <p>Thoughtful business events that connect people and leave a lasting impression.</p>
+              <a href="#contact">DISCOVER MORE <span>→</span></a>
+            </div>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-image"><img
+                src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=850&q=85"
+                alt="Private celebration decorations" loading="lazy"></div>
+            <div class="service-content">
+              <div class="flex items-center justify-between">
+                <h3 class="font-display text-2xl">Private Events</h3><span class="service-arrow">↗</span>
+              </div>
+              <p>Birthdays, anniversaries and special occasions made truly personal.</p>
+              <a href="#contact">DISCOVER MORE <span>→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section id="portfolio" class="portfolio-section px-6 py-24 lg:px-12 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mb-12 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">Selected celebrations
+            </p>
+            <h2 class="font-display text-4xl sm:text-5xl">A glimpse of our <em>world.</em></h2>
+            <p class="mt-5 max-w-xl leading-7 text-muted">Every event has its own personality. Here are a few moments
+              that inspire us.</p>
+          </div>
+
+        </div>
+
+        <!-- The three category covers stay visible until a visitor chooses one. -->
+        <div class="portfolio-grid grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <button type="button"
+            class="portfolio-item group relative h-[300px] overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-4 sm:h-[340px] lg:h-[390px]"
+            data-gallery-open="wedding" aria-label="View wedding gallery">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=85"
+              alt="Outdoor wedding ceremony surrounded by flowers" loading="lazy">
+            <span class="portfolio-overlay"><span>WEDDING CELEBRATIONS</span><strong>Under the open sky</strong><span
+                class="portfolio-view">Explore gallery ↗</span></span>
+          </button>
+          <button type="button"
+            class="portfolio-item group relative h-[300px] overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-4 sm:h-[340px] lg:h-[390px]"
+            data-gallery-open="corporate" aria-label="View corporate events gallery">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=85"
+              alt="Corporate conference and event setup" loading="lazy">
+            <span class="portfolio-overlay"><span>CORPORATE EVENTS</span><strong>Ideas in motion</strong><span
+                class="portfolio-view">Explore gallery ↗</span></span>
+          </button>
+          <button type="button"
+            class="portfolio-item group relative h-[300px] overflow-hidden text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-champagne focus-visible:ring-offset-4 sm:col-span-2 sm:h-[340px] lg:col-span-1 lg:h-[390px]"
+            data-gallery-open="private" aria-label="View private celebrations gallery">
+            <img class="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=900&q=85"
+              alt="Colorful private birthday celebration" loading="lazy">
+            <span class="portfolio-overlay"><span>PRIVATE CELEBRATIONS</span><strong>A reason to celebrate</strong><span
+                class="portfolio-view">Explore gallery ↗</span></span>
+          </button>
+        </div>
+
+        <!-- Gallery images are loaded for the selected category. -->
+        <div id="portfolioGallery" class="portfolio-gallery mt-10 hidden" aria-live="polite">
+          <div class="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p id="galleryEyebrow" class="mb-2 text-[10px] font-bold uppercase tracking-[0.22em] text-champagne">
+                Explore the collection</p>
+              <h3 id="galleryTitle" class="font-display text-3xl sm:text-4xl">Our celebrations</h3>
+            </div>
+            <button id="closeGallery" type="button"
+              class="gallery-close self-start rounded-full border border-[#D9D0C5] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.15em] transition hover:border-ink hover:bg-ink hover:text-white sm:self-auto">Close
+              gallery ×</button>
+          </div>
+          <div id="galleryImages" class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="process-section px-6 py-24 lg:px-12 lg:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mx-auto mb-14 max-w-2xl text-center">
+          <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">The EVENTRA experience
+          </p>
+          <h2 class="font-display text-4xl sm:text-5xl">From first idea to <em>final toast.</em></h2>
+          <p class="mx-auto mt-5 max-w-xl leading-7 text-muted">A clear, collaborative process makes room for the
+            moments that matter.</p>
+        </div>
+        <div class="process-grid grid gap-8 md:grid-cols-4">
+          <article class="process-step reveal"><span>01</span>
+            <h3>We listen</h3>
+            <p>We learn about your occasion, ideas, priorities and budget.</p>
+          </article>
+          <article class="process-step reveal"><span>02</span>
+            <h3>We imagine</h3>
+            <p>We shape a creative direction that feels uniquely yours.</p>
+          </article>
+          <article class="process-step reveal"><span>03</span>
+            <h3>We plan</h3>
+            <p>We coordinate the details, suppliers, schedule and setup.</p>
+          </article>
+          <article class="process-step reveal"><span>04</span>
+            <h3>You celebrate</h3>
+            <p>We manage the day so you can be fully in the moment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATISTICS ==================== -->
+    <section class="stats-section relative overflow-hidden px-6 py-16 lg:px-12">
+      <div class="stats-orb orb-left" aria-hidden="true"></div>
+      <div class="stats-orb orb-right" aria-hidden="true"></div>
+      <div class="relative z-10 mx-auto grid max-w-7xl grid-cols-2 gap-10 text-center md:grid-cols-4">
+        <div class="stat-item reveal"><strong class="counter" data-target="500">0</strong><span>Events crafted</span>
+        </div>
+        <div class="stat-item reveal"><strong class="counter" data-target="320">0</strong><span>Happy clients</span>
+        </div>
+        <div class="stat-item reveal"><strong class="counter" data-target="12">0</strong><span>Creative experts</span>
+        </div>
+        <div class="stat-item reveal"><strong class="counter" data-target="8">0</strong><span>Years of passion</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials-section px-6 py-24 lg:px-12 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mx-auto mb-14 max-w-2xl text-center">
+          <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">Kind words</p>
+          <h2 class="font-display text-4xl sm:text-5xl">The moments they <em>remember.</em></h2>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <p>EVENTRA understood the atmosphere we wanted from the very first meeting. Every detail felt thoughtful and
+              personal.</p>
+            <div class="testimonial-person"><strong>Sarah M.</strong><span>Wedding celebration</span></div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <p>The team made a complicated event feel effortless. Communication was clear, and everything came together
+              beautifully.</p>
+            <div class="testimonial-person"><strong>Ahmed R.</strong><span>Corporate event</span></div>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <p>Our celebration felt like us. The styling, the little touches and the coordination were beyond what we
+              imagined.</p>
+            <div class="testimonial-person"><strong>Mariam K.</strong><span>Private celebration</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TEAM ==================== -->
+    <section id="team" class="team-section px-6 py-24 lg:px-12 lg:py-32">
+      <div class="mx-auto max-w-7xl">
+        <div class="section-heading reveal mb-14 text-center">
+          <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">The people behind the
+            magic</p>
+          <h2 class="font-display text-4xl sm:text-5xl">Meet our creative team.</h2>
+          <p class="mx-auto mt-5 max-w-xl leading-7 text-muted">A team of passionate minds, detail lovers and experience
+            makers.</p>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="team-card reveal">
+            <div class="team-cover cover-one">
+              <div class="team-social"><a href="#contact" aria-label="Amira on LinkedIn">in</a><a href="#contact"
+                  aria-label="Amira on Instagram">ig</a></div><img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=85"
+                alt="Portrait of event director" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Amira Hassan</h3>
+              <p>Creative Director</p>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-cover cover-two">
+              <div class="team-social"><a href="#contact" aria-label="Omar on LinkedIn">in</a><a href="#contact"
+                  aria-label="Omar on Instagram">ig</a></div><img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=85"
+                alt="Portrait of event planner" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Omar Adel</h3>
+              <p>Event Producer</p>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-cover cover-three">
+              <div class="team-social"><a href="#contact" aria-label="Salma on LinkedIn">in</a><a href="#contact"
+                  aria-label="Salma on Instagram">ig</a></div><img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=85"
+                alt="Portrait of stylist" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Salma Nabil</h3>
+              <p>Styling Lead</p>
+            </div>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-cover cover-four">
+              <div class="team-social"><a href="#contact" aria-label="Youssef on LinkedIn">in</a><a href="#contact"
+                  aria-label="Youssef on Instagram">ig</a></div><img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=85"
+                alt="Portrait of experience manager" loading="lazy">
+            </div>
+            <div class="team-info">
+              <h3>Youssef Karim</h3>
+              <p>Experience Manager</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ==================== -->
+    <section class="faq-section px-6 py-24 lg:px-12 lg:py-28">
+      <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div class="reveal">
+          <p class="eyebrow mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">A few answers</p>
+          <h2 class="font-display text-4xl sm:text-5xl">Good to <em>know.</em></h2>
+          <p class="mt-5 max-w-md leading-7 text-muted">Have another question? Tell us what you have in mind and we'll
+            be happy to help.</p>
+          <a href="#contact"
+            class="text-link mt-7 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.16em]">Ask us
+            anything <span>↗</span></a>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item" open>
+            <summary>How early should we book EVENTRA?</summary>
+            <p>For weddings and larger events, reaching out several months ahead is ideal. For smaller celebrations,
+              contact us and we'll discuss the available timeline.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you work with our budget?</summary>
+            <p>Yes. We begin by understanding your priorities and budget, then suggest an event plan that makes the best
+              use of them.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you handle event-day coordination?</summary>
+            <p>Yes. Event-day coordination can be part of your plan, helping suppliers, schedules and details stay
+              organized.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can we customize a package?</summary>
+            <p>Absolutely. Each celebration is different, so we can discuss a plan based on your needs and the kind of
+              experience you want.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CONTACT / FOOTER ==================== -->
+  <footer id="contact" class="contact-section px-6 py-20 text-white lg:px-12 lg:py-24">
+    <div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-2">
+      <div class="reveal">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[0.25em] text-champagne">Let's create something special</p>
+        <h2 class="max-w-lg font-display text-4xl leading-tight sm:text-5xl">Your next beautiful moment starts here.
+        </h2>
+        <p class="mt-6 max-w-md leading-7 text-white/55">Tell us a little about your event. We would love to hear your
+          ideas and make them happen.</p>
+
+        <!-- Demo form: front-end validation and feedback only; no message is sent to a server. -->
+        <form id="contactForm" class="mt-9 space-y-4">
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="sr-only" for="contactName">Your name</label>
+            <input id="contactName" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+            <label class="sr-only" for="contactEmail">Email address</label>
+            <input id="contactEmail" name="email" type="email" placeholder="Email address" autocomplete="email"
+              required>
+          </div>
+          <label class="sr-only" for="eventType">Event type</label>
+          <select id="eventType" name="eventType" required>
+            <option value="">What are you planning?</option>
+            <option>Wedding</option>
+            <option>Corporate event</option>
+            <option>Private celebration</option>
+          </select>
+          <label class="sr-only" for="eventMessage">Tell us about your event</label>
+          <textarea id="eventMessage" name="message" rows="4" placeholder="Tell us about your vision..."
+            required></textarea>
+          <button
+            class="send-btn w-full rounded-full bg-champagne px-7 py-4 text-xs font-bold uppercase tracking-[0.18em] text-ink"
+            type="submit">Send your inquiry <span>↗</span></button>
+          <p id="formMessage" class="text-sm text-champagne" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div class="reveal flex flex-col justify-between">
+        <div>
+          <h3 class="mb-8 font-display text-3xl">Get in touch</h3>
+          <div class="contact-detail"><span>✦</span>
+            <div><small>EMAIL US</small>
+              <p><a href="mailto:hello@eventra.com">hello@eventra.com</a></p>
+            </div>
+          </div>
+          <div class="contact-detail"><span>✦</span>
+            <div><small>CALL US</small>
+              <p><a href="tel:+201001234567">+20 100 123 4567</a></p>
+            </div>
+          </div>
+          <div class="contact-detail"><span>✦</span>
+            <div><small>FIND US</small>
+              <p>Cairo, Egypt</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-card mt-12 flex min-h-48 flex-col justify-between rounded-2xl p-8">
+          <p class="text-xs uppercase tracking-[0.2em] text-white/60">Follow the moments</p>
+          <div class="flex items-end justify-between"><strong class="font-display text-3xl">EVENTRA.</strong>
+            <div class="flex gap-3"><a href="#contact" aria-label="Instagram">IG</a><a href="#contact"
+                aria-label="Facebook">FB</a><a href="#contact" aria-label="LinkedIn">IN</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mx-auto mt-16 flex max-w-7xl flex-col justify-between gap-4 border-t border-white/10 pt-7 text-[10px] uppercase tracking-[0.16em] text-white/40 sm:flex-row">
+      <span>© <span id="currentYear">2026</span> EVENTRA. All rights reserved.</span>
+      <a href="#home" class="back-to-top">Back to top ↑</a>
+      <span>Made for moments that matter.</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
